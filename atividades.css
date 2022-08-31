@@ -1,0 +1,58 @@
+.titulos
+{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.tamanho
+{
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    background-color: lightgray;
+}
+
+.seta
+{  
+        width: 60px;
+        height: 60px;
+}
+.imagem
+{
+    width:200px ;
+    height:200px ;
+}
+.test
+{
+    font-size: 20px;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+#txtN1
+{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#txtN2
+{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#txtN3
+{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#athy
+{
+    width:200px ;
+    height:200px ;
+} #butSomar {
+    width:100px ;
+    height:50px ;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}

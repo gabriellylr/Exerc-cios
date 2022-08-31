@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>Exercício 17</title>
+    <link rel="stylesheet" href="atividades.css">
+    <script lang="Javascript">
+        function tabuada()
+        {
+  var num = parseInt(document.getElementById("num").value);
+  var resposta = document.getElementById('resposta');
+  var tabuada='';
+
+  for(var count=1; count<=10 ; count++)
+   tabuada += num+" x "+count+" = "+
+               num*count+"<br />";
+  
+  resposta.innerHTML = tabuada;
+        }
+     </script>
+    </head>
+    <body>
+        <p class="titulos">Tabuada de um número escolhido</p>
+        <p class="tamanho">Tabuada do número: <input class="test" id="num" type="number"> <br />
+    <button class="test" onclick="tabuada()">Mostrar</button><br />
+    Tabuada: <br /></p>
+    <div class="tamanho" id='resposta' style='display:inline'></div>
+    <hr color="blue">
+    </body>
+    <a href="principal.html"><img src="seta.png" class="seta"></a>
+</html>

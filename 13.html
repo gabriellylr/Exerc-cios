@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <title>Exercício 13</title>
+    <link rel="stylesheet" href="atividades.css">
+    <script lang="Javascript">
+        function somar()
+        {
+            var n1, n2,n3, resultado;
+            n1 = Number(document.getElementById('txtN1').value);
+            n2 = Number(document.getElementById('txtN2').value);
+            n3 = Number(document.getElementById('txtN3').value);
+            resultado = n1 + n2 + n3;
+            var dot = document.getElementById('destino');
+            var imagem = document.getElementById('athy');
+            dot.innerHTML = resultado;
+                var soma1 = n1 + n2;
+                var soma2 = n2 + n3;
+                var soma3 = n1 + n3;
+                resultado = n1 + n2 + n3; 
+                if(n1 > soma2 || n2 > soma3 || n3 > soma1) {
+                  dot.innerHTML = "Isso não é um triangulo!!!";
+                }
+              else if(soma1 == soma2 && soma2 == soma3)
+              {
+                dot.innerHTML += "<br>É um equilátero";
+                imagem.src = 'equilatero.png';
+              }
+                else if(soma1 == soma2 && soma2 != soma3)
+                {
+                  dot.innerHTML += "<br>É um isósceles";
+                imagem.src = 'isoceles.png';
+                }   
+              else if(soma1 != soma2 && soma1 != soma3 && soma2 != soma3)
+              {
+                dot.innerHTML += "<br>É um esceleno";
+                imagem.src = 'escaleno.png';
+              }
+        }
+    </script>
+</head>
+<body>
+    <form name="meuForm" class="tamanho">
+        <p class="titulos">Triângulo</p>
+        <center>
+            <img src="triangulo.png" class="imagem">
+        </center>
+        Número 1: <input type="text" id="txtN1" value="0"><br>
+        Número 2: <input type="text" id="txtN2" value="0"><br>
+        Número 3: <input type="text" id="txtN3" value="0"><br></p>
+        <input type="button" id="butSomar" value="Somar" onclick="somar()">
+    </form>
+    <p class="tamanho">Resultado: <p class="tamanho" id="destino"></p></p>
+    <img id="athy">
+    <hr color="blue">
+    <a href="principal.html"><img src="seta.png" class="seta"></a>
+</body>
+</html>

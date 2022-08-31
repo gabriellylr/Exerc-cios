@@ -1,0 +1,35 @@
+
+body
+{
+    -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
+}
+@-webkit-keyframes colorchange {
+     0%  {background:palegreen;}
+    25%  {background: powderblue;}
+    50%  {background: #117A65;}
+    75%  {background: lightgreen;}
+    100% {background: #9B59B6;}
+}
+@keyframes colorchange {
+     0%  {background: palegreen;}
+    25%  {background: powderblue;}
+    50%  {background: #117A65;}
+    75%  {background:lightgreen;}
+    100% {background: #9B59B6;}
+}   
+p
+{
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font: 6em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+    text-align: center;
+}
+.links
+{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

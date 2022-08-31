@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercício 5</title>
+        <link rel="stylesheet" href="atividades.css">
+
+        <script lang="Javascript">
+            function calcular()
+            {
+               var n1, n2, n3, n4, resultado; 
+               n1 = parseInt(document.meuForm.txtN1.value);
+              n2 = parseInt(document.meuForm.txtN2.value);
+              n3 = parseInt(document.meuForm.txtN3.value);
+              n4 = parseInt(document.meuForm.txtN4.value);
+
+            resultado = ((((n1 + n2) + n3) + n4) / 4);
+            document.getElementById("destino").innerHTML = resultado;
+            document.getElementById("x").innerHTML = resultado;
+            }
+               
+               
+
+        </script>
+        
+    </head>
+
+    <body>
+           <p class="titulos">Média aritmética</p>
+        <form name="meuForm" class="tamanho">
+        Número 1: <input class="test" type="text" name="txtN1" value="0"><br>
+        Número 2: <input class="test" type="text" name="txtN2" value="0"><br>
+        Número 3: <input class="test" type="text" name="txtN3" value="0"><br>
+        Número 4: <input class="test" type="text" name="txtN4" value="0"><br>
+
+        <input class="test" type="button" name="butSomar" value="Calcular" onclick="calcular();">
+
+    </form>
+   <p class="tamanho"> Resultado do calculo: <p id="destino" class="tamanho"></p>
+    <hr color="blue">
+    <a href="principal.html"><img src="seta.png" class="seta"></a>
+
+    </body>
+</html>
